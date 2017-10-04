@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <link rel="stylesheet" text="text/css" href="myStyle.css">
+<title> Ben Wood Portfolio - Data Types</title>
+</head>
+
+<body>
+<div class="header">
+     <h1>Ben Wood E-Portfolio</h1>
+</div>
+
+<ul id="NavBar" class="NavHorizontal">
+   <li><a class="Home" href="portfolio.html">Home</a></li>
+   <li><a class="About Me" href="about.html">About me</a></li>
+   <li class="dropdown"><a href="javascript:void(0)" class="dropbutton">Programming</a>
+    <div class="dropdown-content">
+	<a href="pythonprograms.html">Python Programs</a>
+	<a href="androidprograms.html">Android Programs</a>
+	<a href="otherprograms.html">Other Programs</a>
+	</div>
+	</li>
+   <li><a class="contact" href="contact.html">Contact Me</a></li>
+   <li><a class="active" href="coursecontent.html">Course Content</a></li>
+   <li><a href="CourseContent.html" class="button">Back</a></li>
+</ul>
+
+
+
+<div>
+<h3 class="Subheader" align="center">ASCII</h3>
+<div class = "asciitext" style="float: left;"><img src="ASCIITable.jpg" id="asciiimage">
+Computers can only store information as 1s and 0s. As this is hard to remember and use quickly, and standard was created, stating that a certain combination of 1s and 0s represented
+a certain character, called the American Standard Character Information Interchange (ASCII). 
+<br><br>
+This was initially limited to 7 bits, meaning that there could be 128 separate 
+characters (shown to the right), which when you take into account that this had to include numbers, letters, special symbols such as !, ? etc. as well as other languages, this was not a lot of 
+characters. This was later extended to 8 bits, meaning that 256 different characters could now be stored.
+<br><br>
+Later on, UNICODE was created, which was 16 bits long, and could store 65,536 different characters, a vast improvement on the original ASCII. Since then, the 16 bit limit has been
+ lifted, and so there is an unlimited number of combinations for characters, although the original ASCII still occupies the first 256 characters.
+</div>
+
+<h3 class="Subheader" align="center">PRIMITIVE DATA TYPES</h3>
+
+<div class="minititle">Integers</div>
+
+<div>Integers are simply and whole numb, positive or negative, and are saved as a value rather than just a meaningless character.</div>
+
+
+<div class="minititle">Real Numbers</div>
+
+<div>A real number is any number, positive or negative, rational or irrational, and includes decimals, fractions etc. Again saved as a value rather than a meaningless
+ character.</div>
+ 
+ 
+<div class="minititle">Character</div>
+
+<div>A character is simply any symbol, such as a, or 7, or & etc. These are included in what is now UNICODE.</div>
+
+
+<div class="minititle">String</div>
+
+<div>A string is a collection of characters saved as that collection, this can be a word, or a number, or something else entirely. These are simply saved 
+on face value, for example if you defined the number 47352 as a string, it would simply be saved as that sequence of numbers rather than as a value. As a consequence 
+of this, it cannot be used in equations such as additions and multiplications.</div>
+
+
+<div class="minititle">Boolean Data</div>
+
+<div>Boolean data can only take one of two values; true or false. These are very useful for testing in programs in IF statements to test if a condition is met. For example, if a>b (true/
+false). This data only needs to be 1 bit, as there are only two possible values; true (1), or false(0).</div>
+
+<h3 class="Subheader" align="center">POSITIVE INTEGERS</h3>
+<div>
+<table align="center">
+  <tr>
+    <th>Thousands (1000s)</th>
+    <th>Hundreds (100s)</th> 
+    <th>Tens (10s)</th>
+	<th>Units (1s)</th>
+  </tr>
+  <tr>
+    <th>5</th>
+    <th>7</th> 
+    <th>3</th>
+	<th>4</th>
+  </tr>
+</table>
+<div class="TableDiv">
+The main system that we use in our daily lives is Base 10, Decimal, or the Denary system. It is known as Base 10, as there are 10 characters (0, 1, 2, 3, 4, 5, 6, 7, 8, 9) before we 
+move onto the next column in the system, and each column in the system is multiplied by 10. The number above is 5,743 as there are 5 thousands, 7 hundreds, 3 tens and 4 units. 
+As one column is filled up, when the value is increased by one then the column is set to zero, and the next column up is increased by 1.
+</div><br><br>
+<table align="center">
+  <tr>
+    <th>128</th>
+    <th>64</th> 
+    <th>32</th>
+	<th>16</th>
+	<th>8</th>
+	<th>4</th>
+	<th>2</th>
+	<th>1</th>
+  </tr>
+  <tr>
+    <th>1</th>
+    <th>0</th> 
+    <th>0</th>
+	<th>1</th>
+	<th>0</th>
+	<th>1</th>
+	<th>1</th>
+	<th>1</th>
+  </tr>
+</table>
+<div class="TableDiv">
+This is a computer's main system. This is base 2, or the binary system, because each column is multiplied by 2, and each column can only be one of 2 characters, 1 or a 0. When a column
+ needs to go higher than a 1, that column is set back to zero, and the next column is increased to 1.
+<br><br>
+To convert from base 2 to base 10, we just add all of the column headings together that have a 1 beneath them. The number above is 151, as 128 + 16 + 4 + 2 + 1 = 151.
+<br><br>
+To convert from base 10 to base 2, there are 2 different methods. one method is where you simply start in the 128 column, and see if that fits into your number, if so, take that away from
+ the number and put a 1 in this column, and move onto the next one. This is repeated until the required number is reached. <br>
+The other method is the divide method, as shown below:<br>
+163 / 2 = 81 remainder <b>1</b><br>
+81 / 2 = 40 remainder <b>1</b><br>
+40 / 2 = 20 remainder <b>0</b><br>
+20 / 2 = 10 remainder <b>0</b><br>
+10 / 2 = 5 remainder <b>0</b><br>
+5 / 2 = 2 remainder <b>1</b><br>
+2 / 2 = 1 remainder <b>0</b><br>
+1 / 2 = 0 remainder <b>0</b><br>
+and so the binary number for 163 is 11000100, as you add the remainders from each sum.
+</div>
+</div>
+
+<h3 class="Subheader" align="center">NEGATIVE NUMBERS IN BINARY</h3>
+<div class="minititle">Two's Complement</div>
+<div>
+<table align="center">
+  <tr>
+    <th>-128</th>
+    <th>64</th> 
+    <th>32</th>
+	<th>16</th>
+	<th>8</th>
+	<th>4</th>
+	<th>2</th>
+	<th>1</th>
+  </tr>
+  <tr>
+    <th>1</th>
+    <th>0</th> 
+    <th>0</th>
+	<th>1</th>
+	<th>1</th>
+	<th>0</th>
+	<th>1</th>
+	<th>1</th>
+  </tr>
+</table>
+
+<div class="TableDiv">
+The above is an example of the 'Two's complement' method for showing a negative integer in binary. It takes the MSB (Most Significant Bit) from the binary code, in this case, 128,
+ and makes it negative. Now, if there is a 1 there, you start at -128, and every 1 after that is added on, but the number will always be negative if there is a negative 128, as if all
+ the other columns had a 1, the highest number you could get would be -1. The number shown above is -98, as -128 + 16 + 8 + 2 + 1 = -98.
+</div>
+
+<div class="minititle">Sign & Magnitude</div>
+  
+<table align="center">
+  <tr>
+    <th>-</th>
+    <th>64</th> 
+    <th>32</th>
+	<th>16</th>
+	<th>8</th>
+	<th>4</th>
+	<th>2</th>
+	<th>1</th>
+  </tr>
+  <tr>
+    <th>1</th>
+    <th>1</th> 
+    <th>0</th>
+	<th>0</th>
+	<th>0</th>
+	<th>1</th>
+	<th>0</th>
+	<th>1</th>
+  </tr>
+</table>
+
+<div class="TableDiv">
+This table is an example of the 'Sign and Magnitude method of writing a negative number in binary. It works by storing the sign of the number (- or +) as a bit, and then using the 
+rest of the 8 bits to make the number up as you normally would, however, since the 128 is gone, the highest (or lowest if using the -) number you can get is 127, however this is the
+ same amount as in two's complement, however that method can get 1 lower in the negatives. It is worth noting that it is not always the 128 that is replaced, but it just happens to 
+be the most significant bit in an 8 bit number. For this example, the number is -69, as 64 + 1 + 4 = 69, and the sign is a 1, so it is negative. 
+  </div>
+</div>
+  
+  
+<h3 class="Subheader" align="center">HEXADECIMAL NUMBERS</h3>
+
+<div> Instead of using base 2, like in binary, or base 10, like in denary, or decimal, Hexadecimal uses base 16, meaning that the columns in hexadecimal numbers represent powers of 16.
+In addition to this, since there are only 10 numbers available to use, but 16 are used in hex, the letters A-F are used for numbers above 9, meaning that what is 1-16 in denary, is 
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F.<br>
+<table align="center">
+  <tr>
+    <th>Column Value</th>
+    <th>4096</th> 
+    <th>256</th>
+	<th>16</th>
+	<th>1</th>
+  </tr>
+  <tr>
+    <th>Hexadecimal number</th>
+    <th>0</th> 
+    <th>A</th>
+	<th>2</th>
+	<th>C</th>
+  </tr>
+  <tr>
+    <th>Denary Value</th>
+    <th>0*4096</th> 
+    <th>10*256</th>
+	<th>2*16</th>
+	<th>12*1</th>
+  </tr>
+</table>
+<div class="TableDiv">
+As shown in the table above, Hexadecimal can be used to store large numbers in much smaller, and easier to remember lengths, in this particular case, the number 2604 (in denary) is stored 
+in just 3 characters, A2C, as the 0 does not need to be included. This string has the value of 2604 because (10*256)+(2*16)+(12*1)=2560+32+12=2604. The columns have the values that they do 
+because as I mentioned earlier, they are in powers of 16. <br>  e.g. 16<span class="power">0</span> = 1, 16<span class="power">1</span> = 16, 16<span class="power">2</span> = 256, and 
+16<span class="power">3</span> = 4096. </div>
+
+<div class="minititle">Converting between Hex and Decimal</div>
+
+<div>There is a very easy way to convert from an 8 bit binary number to hexadecimal. First, split the binary number into two 4 bit halves, or 'nibbles'. Treat these as two individual 4 bit binary 
+numbers, and the maximum number you should be able to get is 15, which is also the highest value in hex, stored as the value F, before you have to move onto the next column similar to in binary. 
+Repeat this system for the other binary nibble and convert it into hex, and when you put them together, that number should be the same number in hex as it was as the original 8 bit number. 
+This will also work for binary numbers over 8 bits, and if the number of bits is not a multiple of 4, add extra 0s on the left until it is, and it will then work.<br><br>
+
+For example, you can split the binary number 01101101 (or 109 in denary) into 2 nibbles; 0110 and 1101. 0110 = 2 + 4 = 6. 1101 = 8 + 4 + 1 = 13, which in hex is D, add the two back together 
+and our number is 6D, which is (6*16) + 13 = 96 + 13 = 109, the same as our binary number.<br>
+To convert back, we would take a hex number, in this case A5 (in denary, 160 + 5 = 165), and split it into 5. A is 10 in denary, and in binary, that is represented by 1010. For the next 
+part, we take 5, and convert that into binary, 0101. We then combine these together to make 10100101. <br>128 + 32 + 1 + 4 = 165, the same as our hex value.
+</div>
+</div>
+
+
+
+</div>
